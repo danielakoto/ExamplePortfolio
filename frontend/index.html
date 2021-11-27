@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-computer-online-learning-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>App Template</title>
+</head>
+<body> 
+    <div class="navHeader">
+        <div class="navBar">
+            
+            <a href="/" style="opacity: 0.7;"><img class="logo" src="/static/pictures/example-logo.jpg" ></a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/" class="nav_link" data-link>Dashboard</a></li>
+                    <li><a href="/posts" class="nav_link" data-link>Projects</a></li>
+                    <li><a href="/profile" class="nav_link" data-link>Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="app">
+        </div>
+    </div>
+    
+    
+    <script type="module" src="/static/js/app.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyD5Ol-bZKSwBrw_f40BbjG_VIWG6z0K_Zg",
+            authDomain: "exampleportfolio-1.firebaseapp.com",
+            projectId: "exampleportfolio-1",
+            storageBucket: "exampleportfolio-1.appspot.com",
+            messagingSenderId: "408109036450",
+            appId: "1:408109036450:web:6a0ecc91cf8b3b3c47f8fb",
+            measurementId: "G-4HC3JZRNVM"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
